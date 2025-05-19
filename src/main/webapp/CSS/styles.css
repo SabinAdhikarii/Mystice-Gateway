@@ -1,0 +1,174 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family:Tahoma, Verdana, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6200ea; 
+  padding: 20px 40px;
+}
+
+.logo img {
+  height: 90px;
+  width: auto;
+}
+
+/* Navigation links */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffd700;
+}
+
+/* Hero image */
+.hero-section {
+  padding-top: 10px;
+  background-image: url('../Resources/traveling-with-off-road-car.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100vh - 70px); /* Full screen minus navbar height */
+}
+
+.section-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 80px;
+  background-color: #ffffff;
+}
+
+.about-text {
+  max-width: 60%;
+}
+
+.about-text h4 {
+  color: #f7941e; /* orange color */
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.about-text h1 {
+  color: #1a2b6d; /* deep blue */
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: #2e2e2e;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.whatsapp-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #25D366;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.whatsapp-box img {
+  height: 24px;
+  width: 24px;
+}
+
+.about-image img {
+  width: 500px;
+  max-width: 100%;
+}
+
+.section-guidance {
+  background-color: #fefaf1;
+  padding: 80px 60px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section-guidance h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 60px;
+}
+
+.guidance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fefaf1;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: left;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #111;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.card a {
+  font-weight: 500;
+  color: #111;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 1rem;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
